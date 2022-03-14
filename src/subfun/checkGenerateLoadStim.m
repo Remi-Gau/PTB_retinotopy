@@ -50,11 +50,11 @@ function cfg = checkGenerateLoadStim(cfg)
 
 end
 
-function imgCogent = cogentImage(Img8bit)
-    % ImgCogent = CogentImage(Img8bit)
+function imgCogent = cogentImage(img8bit)
+    % ImgCogent = CogentImage(img8bit)
     % Converts the 8 bit image (0-255) into a cogent image (0-1).
 
-    imgCogent = (double(Img8bit) + 1) / 256;
+    imgCogent = (double(img8bit) + 1) / 256;
 end
 
 function imgOut = invertContrastCogent(imgIn)
